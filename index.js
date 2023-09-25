@@ -12,7 +12,6 @@ const opts = {
     'appium:app': "http://localhost:8081/UIKitCatalog-iphonesimulator.app.zip",
     'appium:language': "en",
     'appium:orientation': "PORTRAIT",
-    //'appium:noReset': true,
     'appium:processArguments': {},
     'appium:clearSystemFiles': false,
     'appium:skipLogCapture': false,
