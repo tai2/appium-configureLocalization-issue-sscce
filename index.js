@@ -1,5 +1,6 @@
 const wdio = require("webdriverio")
 const fs = require("fs")
+const { setTimeout } = require('timers/promises')
 
 const opts = {
   path: '/wd/hub',
@@ -29,6 +30,8 @@ async function main () {
     }
   })
   
+  await setTimeout(5000)
+
   const windowSize = await client.getWindowSize()
   console.log(windowSize)
 }
