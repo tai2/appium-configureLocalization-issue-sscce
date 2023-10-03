@@ -1,6 +1,352 @@
 # Appium Log
 
-## With a delay before getWindowRect()
+## With a 70 seconds delay before getWindowRect()
+
+```
+[Appium] Welcome to Appium v2.1.3 (REV e8d79005c9ed099d5b59212fe53fb44644218ffb)
+[Appium] Non-default server args:
+[Appium] {
+[Appium]   basePath: '/wd/hub'
+[Appium] }
+[Appium] Attempting to load driver xcuitest...
+[debug] [Appium] Requiring driver at /Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/appium-xcuitest-driver
+[Appium] Appium REST http interface listener started on http://0.0.0.0:4723/wd/hub
+[Appium] You can provide the following URLs in your client code to connect to this server:
+[Appium]        http://127.0.0.1:4723/wd/hub (only accessible from the same host)
+[Appium]        http://192.168.0.231:4723/wd/hub
+[Appium] Available drivers:
+[Appium]   - xcuitest@5.3.3 (automationName 'XCUITest')
+[Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+[HTTP] --> POST /wd/hub/session
+[HTTP] {"capabilities":{"alwaysMatch":{"platformName":"ios","appium:automationName":"XCUITest","appium:platformVersion":"15.2","appium:deviceName":"iPhone 12 Pro","appium:app":"http://localhost:8081/UIKitCatalog-iphonesimulator.app.zip","appium:language":"en","appium:orientation":"PORTRAIT","appium:processArguments":{},"appium:clearSystemFiles":false,"appium:skipLogCapture":false},"firstMatch":[{}]},"desiredCapabilities":{"platformName":"ios","appium:automationName":"XCUITest","appium:platformVersion":"15.2","appium:deviceName":"iPhone 12 Pro","appium:app":"http://localhost:8081/UIKitCatalog-iphonesimulator.app.zip","appium:language":"en","appium:orientation":"PORTRAIT","appium:processArguments":{},"appium:clearSystemFiles":false,"appium:skipLogCapture":false}}
+[debug] [AppiumDriver@774a] Calling AppiumDriver.createSession() with args: [{"platformName":"ios","appium:automationName":"XCUITest","appium:platformVersion":"15.2","appium:deviceName":"iPhone 12 Pro","appium:app":"http://localhost:8081/UIKitCatalog-iphonesimulator.app.zip","appium:language":"en","appium:orientation":"PORTRAIT","appium:processArguments":{},"appium:clearSystemFiles":false,"appium:skipLogCapture":false},null,{"alwaysMatch":{"platformName":"ios","appium:automationName":"XCUITest","appium:platformVersion":"15.2","appium:deviceName":"iPhone 12 Pro","appium:app":"http://localhost:8081/UIKitCatalog-iphonesimulator.app.zip","appium:language":"en","appium:orientation":"PORTRAIT","appium:processArguments":{},"appium:clearSystemFiles":false,"appium:skipLogCapture":false},"firstMatch":[{}]}]
+[debug] [AppiumDriver@774a] Event 'newSessionRequested' logged at 1696293614800 (09:40:14 GMT+0900 (Japan Standard Time))
+[Appium] Attempting to find matching driver for automationName 'XCUITest' and platformName 'ios'
+[Appium] The 'xcuitest' driver was installed and matched caps.
+[Appium] Will require it at /Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/appium-xcuitest-driver
+[debug] [Appium] Requiring driver at /Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/appium-xcuitest-driver
+[AppiumDriver@774a] Appium v2.1.3 creating new XCUITestDriver (v5.3.3) session
+[AppiumDriver@774a] Checking BaseDriver versions for Appium and XCUITestDriver
+[AppiumDriver@774a] Appium's BaseDriver version is 9.3.20
+[AppiumDriver@774a] XCUITestDriver's BaseDriver version is 9.3.20
+[debug] [XCUITestDriver@6c2f] Creating session with W3C capabilities: {
+[debug] [XCUITestDriver@6c2f]   "alwaysMatch": {
+[debug] [XCUITestDriver@6c2f]     "platformName": "ios",
+[debug] [XCUITestDriver@6c2f]     "appium:automationName": "XCUITest",
+[debug] [XCUITestDriver@6c2f]     "appium:platformVersion": "15.2",
+[debug] [XCUITestDriver@6c2f]     "appium:deviceName": "iPhone 12 Pro",
+[debug] [XCUITestDriver@6c2f]     "appium:app": "http://localhost:8081/UIKitCatalog-iphonesimulator.app.zip",
+[debug] [XCUITestDriver@6c2f]     "appium:language": "en",
+[debug] [XCUITestDriver@6c2f]     "appium:orientation": "PORTRAIT",
+[debug] [XCUITestDriver@6c2f]     "appium:processArguments": {},
+[debug] [XCUITestDriver@6c2f]     "appium:clearSystemFiles": false,
+[debug] [XCUITestDriver@6c2f]     "appium:skipLogCapture": false
+[debug] [XCUITestDriver@6c2f]   },
+[debug] [XCUITestDriver@6c2f]   "firstMatch": [
+[debug] [XCUITestDriver@6c2f]     {}
+[debug] [XCUITestDriver@6c2f]   ]
+[debug] [XCUITestDriver@6c2f] }
+[XCUITestDriver@6c2f (1a99ce25)] Session created with session id: 1a99ce25-9c4c-4b90-97c4-7c98fb5179a5
+[debug] [XCUITest] Current user: 'tai2'
+[XCUITestDriver@6c2f (1a99ce25)] No real device udid has been provided in capabilities. Will select a matching simulator to run the test.
+[XCUITestDriver@6c2f (1a99ce25)] iOS SDK Version set to '17.0'
+[debug] [XCUITest] Looking for an existing Simulator with platformName: iOS, platformVersion: 15.2, deviceName: iPhone 12 Pro
+[iOSSim] Constructing iOS simulator for Xcode version 15.0 with udid '094788CA-AFD3-4EA7-BF02-461D6AF458B0'
+[XCUITestDriver@6c2f (1a99ce25)] Determining device to run tests on: udid: '094788CA-AFD3-4EA7-BF02-461D6AF458B0', real device: false
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Event 'xcodeDetailsRetrieved' logged at 1696293614963 (09:40:14 GMT+0900 (Japan Standard Time))
+[BaseDriver] Using downloadable app 'http://localhost:8081/UIKitCatalog-iphonesimulator.app.zip'
+ HTTP  10/3/2023 9:40:14 AM ::1 GET /UIKitCatalog-iphonesimulator.app.zip
+ HTTP  10/3/2023 9:40:14 AM ::1 Returned 200 in 23 ms
+[debug] [BaseDriver] Etag: "a1e2c218d73f934127d95159c841aa4b85360c50"
+[debug] [BaseDriver] Last-Modified: undefined
+[debug] [BaseDriver] Cache-Control: undefined
+[debug] [BaseDriver] Content-Type: application/zip
+[debug] [BaseDriver] The application (1.57 MB) has been downloaded to '/var/folders/2t/ndb5vh014k1bw8jljyqgkgs80000gn/T/202393-65478-wj9gmp.85kgb/UIKitCatalog-iphonesimulator.app.zip' in 0.003s
+[debug] [Support] Found 'unzip' at '/usr/bin/unzip'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Found 1 bundle in 'UIKitCatalog-iphonesimulator.app.zip': UIKitCatalog-iphonesimulator.app
+[XCUITestDriver@6c2f (1a99ce25)] 'UIKitCatalog-iphonesimulator.app' is the resulting application bundle selected from '/var/folders/2t/ndb5vh014k1bw8jljyqgkgs80000gn/T/202393-65478-wj9gmp.85kgb/UIKitCatalog-iphonesimulator.app.zip'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Event 'appConfigured' logged at 1696293615038 (09:40:15 GMT+0900 (Japan Standard Time))
+[debug] [XCUITest] Checking whether app '/var/folders/2t/ndb5vh014k1bw8jljyqgkgs80000gn/T/202393-65478-1cnzj04.6i1a/UIKitCatalog-iphonesimulator.app' is actually present on file system
+[debug] [XCUITest] App is present
+[debug] [XCUITest] Getting bundle ID from app '/var/folders/2t/ndb5vh014k1bw8jljyqgkgs80000gn/T/202393-65478-1cnzj04.6i1a/UIKitCatalog-iphonesimulator.app': 'com.example.apple-samplecode.UICatalog'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Event 'resetStarted' logged at 1696293615038 (09:40:15 GMT+0900 (Japan Standard Time))
+[debug] [simctl] Error running 'terminate': An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=3):
+Simulator device returned an error for the requested operation.
+FBSSystemService reported failure without an error, possibly because the app is not currently running.
+Underlying error (domain=NSPOSIXErrorDomain, code=3):
+        Application termination failed.
+        FBSSystemService reported failure without an error, possibly because the app is not currently running.
+[XCUITest] Reset: failed to terminate Simulator application with id "com.example.apple-samplecode.UICatalog"
+[XCUITest] Not scrubbing third party app in anticipation of uninstall
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Event 'resetComplete' logged at 1696293615137 (09:40:15 GMT+0900 (Japan Standard Time))
+[XCUITestDriver@6c2f (1a99ce25)] Using WDA path: '/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/appium-webdriveragent'
+[XCUITestDriver@6c2f (1a99ce25)] Using WDA agent: '/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj'
+[debug] [IOSSimulatorLog] Starting log capture for iOS Simulator with udid '094788CA-AFD3-4EA7-BF02-461D6AF458B0' using simctl
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Event 'logCaptureStarted' logged at 1696293615353 (09:40:15 GMT+0900 (Japan Standard Time))
+[XCUITestDriver@6c2f (1a99ce25)] Setting up simulator
+[debug] [iOSSim] Setting preferences of 094788CA-AFD3-4EA7-BF02-461D6AF458B0 Simulator to {"SimulatorWindowOrientation":"Portrait","SimulatorWindowRotationAngle":0,"ConnectHardwareKeyboard":false}
+[debug] [iOSSim] Setting common Simulator preferences to {"RotateWindowWhenSignaledByGuest":true,"StartLastDeviceOnLaunch":false,"DetachOnWindowClose":false,"AttachBootedOnStart":true,"ConnectHardwareKeyboard":false,"PasteboardAutomaticSync":false}
+[debug] [iOSSim] Updated 094788CA-AFD3-4EA7-BF02-461D6AF458B0 Simulator preferences at '/Users/tai2/Library/Preferences/com.apple.iphonesimulator.plist' with {"RotateWindowWhenSignaledByGuest":true,"StartLastDeviceOnLaunch":false,"DetachOnWindowClose":false,"AttachBootedOnStart":true,"ConnectHardwareKeyboard":false,"PasteboardAutomaticSync":false,"DevicePreferences":{"094788CA-AFD3-4EA7-BF02-461D6AF458B0":{"ConnectHardwareKeyboard":false,"SimulatorExternalDisplay":2114,"ChromeTint":"","SimulatorWindowOrientation":"Portrait","SimulatorWindowGeometry":{"FE1AE307-BF61-4A8E-9BAF-FD82332B0C65":{"WindowCenter":"{252.5, 445.5}","WindowScale":0.9707207207207207},"50F49432-B5FA-495F-AFF1-8891AF0C1B4D":{"WindowCenter":"{902.5, 545.5}","WindowScale":0.9707207207207207}},"SimulatorWindowRotationAngle":0}}}
+[debug] [iOSSim] Got Simulator UI client PID: 624
+[iOSSim] Both Simulator with UDID '094788CA-AFD3-4EA7-BF02-461D6AF458B0' and the UI client are currently running
+[debug] [XCUITest] About to update localization preferences: {"language":{"name":"en"}}
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Localization preferences have been updated
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Event 'simStarted' logged at 1696293616277 (09:40:16 GMT+0900 (Japan Standard Time))
+[debug] [XCUITest] Verifying application platform
+[debug] [XCUITest] CFBundleSupportedPlatforms: ["iPhoneSimulator"]
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Parsed BUILD_DIR configuration value: '/Users/tai2/Library/Developer/Xcode/DerivedData/WebDriverAgent-acfmfzozfexltodbcmjpudoqiaxl/Build/Products'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Got derived data root: '/Users/tai2/Library/Developer/Xcode/DerivedData/WebDriverAgent-acfmfzozfexltodbcmjpudoqiaxl'
+[XCUITestDriver@6c2f (1a99ce25)] App 'com.example.apple-samplecode.UICatalog' is already installed
+[debug] [XCUITest] Reset requested. Removing app with id 'com.example.apple-samplecode.UICatalog' from the device
+[debug] [XCUITest] Installing '/var/folders/2t/ndb5vh014k1bw8jljyqgkgs80000gn/T/202393-65478-1cnzj04.6i1a/UIKitCatalog-iphonesimulator.app' on Simulator with UUID '094788CA-AFD3-4EA7-BF02-461D6AF458B0'...
+[debug] [XCUITest] The app has been installed successfully.
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Event 'appInstalled' logged at 1696293617936 (09:40:17 GMT+0900 (Japan Standard Time))
+[debug] [XCUITestDriver@6c2f (1a99ce25)] No obsolete cached processes from previous WDA sessions listening on port 8100 have been found
+[DevCon Factory] Requesting connection for device 094788CA-AFD3-4EA7-BF02-461D6AF458B0 on local port 8100
+[debug] [DevCon Factory] Cached connections count: 0
+[DevCon Factory] Successfully requested the connection for 094788CA-AFD3-4EA7-BF02-461D6AF458B0:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Starting WebDriverAgent initialization with the synchronization key 'XCUITestDriver'
+[debug] [WD Proxy] Matched '/status' to command name 'getStatus'
+[debug] [WD Proxy] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[WD Proxy] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] WDA is not listening at 'http://127.0.0.1:8100/'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] WDA is currently not running. There is nothing to cache
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Trying to start WebDriverAgent 2 times with 10000ms interval
+[debug] [XCUITestDriver@6c2f (1a99ce25)] These values can be customized by changing wdaStartupRetries/wdaStartupRetryInterval capabilities
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Event 'wdaStartAttempted' logged at 1696293618063 (09:40:18 GMT+0900 (Japan Standard Time))
+[XCUITestDriver@6c2f (1a99ce25)] Launching WebDriverAgent on the device
+[XCUITestDriver@6c2f (1a99ce25)] Cleaning up the WebDriverAgent project after the module upgrade has happened (5.0.0 < 5.9.1)
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Cleaning the project scheme 'WebDriverAgentLib' to make sure there are no leftovers from previous installs
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Cleaning the project scheme 'WebDriverAgentRunner' to make sure there are no leftovers from previous installs
+[debug] [WebDriverAgent] Killing running processes 'xcodebuild.*094788CA-AFD3-4EA7-BF02-461D6AF458B0, 094788CA-AFD3-4EA7-BF02-461D6AF458B0.*XCTRunner, xctest.*094788CA-AFD3-4EA7-BF02-461D6AF458B0' for the device 094788CA-AFD3-4EA7-BF02-461D6AF458B0...
+[debug] [WebDriverAgent] 'pgrep -if 094788CA-AFD3-4EA7-BF02-461D6AF458B0.*XCTRunner' didn't detect any matching processes. Return code: 1
+[debug] [WebDriverAgent] 'pgrep -if xcodebuild.*094788CA-AFD3-4EA7-BF02-461D6AF458B0' didn't detect any matching processes. Return code: 1
+[debug] [WebDriverAgent] 'pgrep -if xctest.*094788CA-AFD3-4EA7-BF02-461D6AF458B0' didn't detect any matching processes. Return code: 1
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Beginning test with command 'xcodebuild build-for-testing test-without-building -project /Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -derivedDataPath /Users/tai2/Library/Developer/Xcode/DerivedData/WebDriverAgent-acfmfzozfexltodbcmjpudoqiaxl -destination id=094788CA-AFD3-4EA7-BF02-461D6AF458B0 IPHONEOS_DEPLOYMENT_TARGET=15.2 GCC_TREAT_WARNINGS_AS_ERRORS=0 COMPILER_INDEX_STORE_ENABLE=NO' in directory '/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/appium-webdriveragent'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Output from xcodebuild will only be logged if any errors are present there. To change this, use 'showXcodeLog' desired capability
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Waiting up to 60000ms for WebDriverAgent to start
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[XCUITestDriver@6c2f (1a99ce25)] connect ECONNREFUSED 127.0.0.1:8100
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/status' to command name 'getStatus'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Got response with status 200: {"value":{"build":{"upgradedAt":"1695617483462","time":"Oct  3 2023 09:40:22","productBundleIdentifier":"com.facebook.WebDriverAgentRunner"},"os":{"testmanagerdVersion":65535,"name":"iOS","sdkVersion":"17.0","version":"15.2"},"device":"iphone","ios":{"simulatorVersion":"15.2","ip":"192.168.0.231"},"message":"WebDriverAgent is ready to accept commands","state":"success","ready":true},"sessionId":null}
+[debug] [XCUITestDriver@6c2f (1a99ce25)] WebDriverAgent information:
+[debug] [XCUITestDriver@6c2f (1a99ce25)] {
+[debug] [XCUITestDriver@6c2f (1a99ce25)]   "build": {
+[debug] [XCUITestDriver@6c2f (1a99ce25)]     "upgradedAt": "1695617483462",
+[debug] [XCUITestDriver@6c2f (1a99ce25)]     "time": "Oct  3 2023 09:40:22",
+[debug] [XCUITestDriver@6c2f (1a99ce25)]     "productBundleIdentifier": "com.facebook.WebDriverAgentRunner"
+[debug] [XCUITestDriver@6c2f (1a99ce25)]   },
+[debug] [XCUITestDriver@6c2f (1a99ce25)]   "os": {
+[debug] [XCUITestDriver@6c2f (1a99ce25)]     "testmanagerdVersion": 65535,
+[debug] [XCUITestDriver@6c2f (1a99ce25)]     "name": "iOS",
+[debug] [XCUITestDriver@6c2f (1a99ce25)]     "sdkVersion": "17.0",
+[debug] [XCUITestDriver@6c2f (1a99ce25)]     "version": "15.2"
+[debug] [XCUITestDriver@6c2f (1a99ce25)]   },
+[debug] [XCUITestDriver@6c2f (1a99ce25)]   "device": "iphone",
+[debug] [XCUITestDriver@6c2f (1a99ce25)]   "ios": {
+[debug] [XCUITestDriver@6c2f (1a99ce25)]     "simulatorVersion": "15.2",
+[debug] [XCUITestDriver@6c2f (1a99ce25)]     "ip": "192.168.0.231"
+[debug] [XCUITestDriver@6c2f (1a99ce25)]   },
+[debug] [XCUITestDriver@6c2f (1a99ce25)]   "message": "WebDriverAgent is ready to accept commands",
+[debug] [XCUITestDriver@6c2f (1a99ce25)]   "state": "success",
+[debug] [XCUITestDriver@6c2f (1a99ce25)]   "ready": true
+[debug] [XCUITestDriver@6c2f (1a99ce25)] }
+[debug] [XCUITestDriver@6c2f (1a99ce25)] WebDriverAgent successfully started after 24582ms
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Event 'wdaSessionAttempted' logged at 1696293644407 (09:40:44 GMT+0900 (Japan Standard Time))
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Sending createSession command to WDA
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/session' to command name 'createSession'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [POST /session] to [POST http://127.0.0.1:8100/session] with body: {"capabilities":{"firstMatch":[{"bundleId":"com.example.apple-samplecode.UICatalog","arguments":["-AppleLanguages","(en)","-NSLanguages","(en)"],"environment":{},"eventloopIdleDelaySec":0,"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true,"shouldTerminateApp":true,"forceAppLaunch":true,"useNativeCachingStrategy":true,"forceSimulatorSoftwareKeyboardPresence":true}],"alwaysMatch":{}}}
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Got response with status 200: {"value":{"sessionId":"8DE52F3B-48D7-4A92-A827-DB18D487354B","capabilities":{"sdkVersion":"15.2","device":"iphone"}},"sessionId":"8DE52F3B-48D7-4A92-A827-DB18D487354B"}
+[XCUITestDriver@6c2f (1a99ce25)] Determined the downstream protocol as 'W3C'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Event 'wdaSessionStarted' logged at 1696293647487 (09:40:47 GMT+0900 (Japan Standard Time))
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Event 'wdaStarted' logged at 1696293647488 (09:40:47 GMT+0900 (Japan Standard Time))
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Setting initial orientation to 'PORTRAIT'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Matched '/orientation' to command name 'setOrientation'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Proxying [POST /orientation] to [POST http://127.0.0.1:8100/session/8DE52F3B-48D7-4A92-A827-DB18D487354B/orientation] with body: {"orientation":"PORTRAIT"}
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Got response with status 200: {"value":null,"sessionId":"8DE52F3B-48D7-4A92-A827-DB18D487354B"}
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Event 'orientationSet' logged at 1696293647984 (09:40:47 GMT+0900 (Japan Standard Time))
+[debug] [BaseDriver] The value of 'elementResponseAttributes' setting did not change. Skipping the update for it
+[debug] [BaseDriver] The value of 'shouldUseCompactResponses' setting did not change. Skipping the update for it
+[AppiumDriver@774a] New XCUITestDriver session created successfully, session 1a99ce25-9c4c-4b90-97c4-7c98fb5179a5 added to master session list
+[debug] [AppiumDriver@774a] Event 'newSessionStarted' logged at 1696293647986 (09:40:47 GMT+0900 (Japan Standard Time))
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Cached the protocol value 'W3C' for the new session 1a99ce25-9c4c-4b90-97c4-7c98fb5179a5
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Responding to client with driver.createSession() result: {"capabilities":{"webStorageEnabled":false,"locationContextEnabled":false,"browserName":"","platform":"MAC","javascriptEnabled":true,"databaseEnabled":false,"takesScreenshot":true,"networkConnectionEnabled":false,"platformName":"ios","automationName":"XCUITest","platformVersion":"15.2","deviceName":"iPhone 12 Pro","app":"http://localhost:8081/UIKitCatalog-iphonesimulator.app.zip","language":"en","orientation":"PORTRAIT","processArguments":{},"clearSystemFiles":false,"skipLogCapture":false,"udid":"094788CA-AFD3-4EA7-BF02-461D6AF458B0"}}
+[HTTP] <-- POST /wd/hub/session 200 33192 ms - 602
+[HTTP]
+[HTTP] --> POST /wd/hub/session/1a99ce25-9c4c-4b90-97c4-7c98fb5179a5/execute/sync
+[HTTP] {"script":"mobile:configureLocalization","args":[{"keyboard":{"name":"ja_JP-Kana","layout":"Kana","hardware":"Automatic"}}]}
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Calling AppiumDriver.execute() with args: ["mobile:configureLocalization",[{"keyboard":{"name":"ja_JP-Kana","layout":"Kana","hardware":"Automatic"}}],"1a99ce25-9c4c-4b90-97c4-7c98fb5179a5"]
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Executing command 'execute'
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Responding to client with driver.execute() result: true
+[HTTP] <-- POST /wd/hub/session/1a99ce25-9c4c-4b90-97c4-7c98fb5179a5/execute/sync 200 425 ms - 14
+[HTTP]
+[Xcode] xcodebuild exited with code '65' and signal 'null'
+[XCUITestDriver@6c2f (1a99ce25)] Shutting down because we waited 60 seconds for a command
+[AppiumDriver@774a] Ending session, cause was 'New Command Timeout of 60 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
+[AppiumDriver@774a] Removing session '1a99ce25-9c4c-4b90-97c4-7c98fb5179a5' from our master session list
+[DevCon Factory] Releasing connections for 094788CA-AFD3-4EA7-BF02-461D6AF458B0 device on any port number
+[DevCon Factory] Found cached connections to release: ["094788CA-AFD3-4EA7-BF02-461D6AF458B0:8100"]
+[debug] [DevCon Factory] Cached connections count: 0
+[debug] [XCUITestDriver@6c2f (1a99ce25)] Not clearing log files. Use `clearSystemFiles` capability to turn on.
+[debug] [IOSSimulatorLog] Stopping iOS log capture
+[HTTP] --> GET /wd/hub/session/1a99ce25-9c4c-4b90-97c4-7c98fb5179a5/window/rect
+[HTTP] {}
+[debug] [AppiumDriver@774a] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+[debug] [AppiumDriver@774a]     at asyncHandler (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/@appium/base-driver/lib/protocol/protocol.js:315:15)
+[debug] [AppiumDriver@774a]     at /Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/@appium/base-driver/lib/protocol/protocol.js:518:15
+[debug] [AppiumDriver@774a]     at Layer.handle [as handle_request] (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/layer.js:95:5)
+[debug] [AppiumDriver@774a]     at next (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/route.js:144:13)
+[debug] [AppiumDriver@774a]     at Route.dispatch (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/route.js:114:3)
+[debug] [AppiumDriver@774a]     at Layer.handle [as handle_request] (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/layer.js:95:5)
+[debug] [AppiumDriver@774a]     at /Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:284:15
+[debug] [AppiumDriver@774a]     at param (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:365:14)
+[debug] [AppiumDriver@774a]     at param (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:376:14)
+[debug] [AppiumDriver@774a]     at Function.process_params (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:421:3)
+[debug] [AppiumDriver@774a]     at next (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:280:10)
+[debug] [AppiumDriver@774a]     at logger (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/morgan/index.js:144:5)
+[debug] [AppiumDriver@774a]     at Layer.handle [as handle_request] (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/layer.js:95:5)
+[debug] [AppiumDriver@774a]     at trim_prefix (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:328:13)
+[debug] [AppiumDriver@774a]     at /Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:286:9
+[debug] [AppiumDriver@774a]     at Function.process_params (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:346:12)
+[HTTP] <-- GET /wd/hub/session/1a99ce25-9c4c-4b90-97c4-7c98fb5179a5/window/rect 404 17 ms - 2368
+[HTTP]
+[HTTP] --> GET /wd/hub/session/1a99ce25-9c4c-4b90-97c4-7c98fb5179a5/window/rect
+[HTTP] {}
+[debug] [AppiumDriver@774a] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+[debug] [AppiumDriver@774a]     at asyncHandler (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/@appium/base-driver/lib/protocol/protocol.js:315:15)
+[debug] [AppiumDriver@774a]     at /Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/@appium/base-driver/lib/protocol/protocol.js:518:15
+[debug] [AppiumDriver@774a]     at Layer.handle [as handle_request] (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/layer.js:95:5)
+[debug] [AppiumDriver@774a]     at next (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/route.js:144:13)
+[debug] [AppiumDriver@774a]     at Route.dispatch (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/route.js:114:3)
+[debug] [AppiumDriver@774a]     at Layer.handle [as handle_request] (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/layer.js:95:5)
+[debug] [AppiumDriver@774a]     at /Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:284:15
+[debug] [AppiumDriver@774a]     at param (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:365:14)
+[debug] [AppiumDriver@774a]     at param (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:376:14)
+[debug] [AppiumDriver@774a]     at Function.process_params (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:421:3)
+[debug] [AppiumDriver@774a]     at next (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:280:10)
+[debug] [AppiumDriver@774a]     at logger (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/morgan/index.js:144:5)
+[debug] [AppiumDriver@774a]     at Layer.handle [as handle_request] (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/layer.js:95:5)
+[debug] [AppiumDriver@774a]     at trim_prefix (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:328:13)
+[debug] [AppiumDriver@774a]     at /Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:286:9
+[debug] [AppiumDriver@774a]     at Function.process_params (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:346:12)
+[HTTP] <-- GET /wd/hub/session/1a99ce25-9c4c-4b90-97c4-7c98fb5179a5/window/rect 404 1 ms - 2368
+[HTTP]
+[HTTP] --> GET /wd/hub/session/1a99ce25-9c4c-4b90-97c4-7c98fb5179a5/window/rect
+[HTTP] {}
+[debug] [AppiumDriver@774a] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+[debug] [AppiumDriver@774a]     at asyncHandler (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/@appium/base-driver/lib/protocol/protocol.js:315:15)
+[debug] [AppiumDriver@774a]     at /Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/@appium/base-driver/lib/protocol/protocol.js:518:15
+[debug] [AppiumDriver@774a]     at Layer.handle [as handle_request] (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/layer.js:95:5)
+[debug] [AppiumDriver@774a]     at next (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/route.js:144:13)
+[debug] [AppiumDriver@774a]     at Route.dispatch (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/route.js:114:3)
+[debug] [AppiumDriver@774a]     at Layer.handle [as handle_request] (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/layer.js:95:5)
+[debug] [AppiumDriver@774a]     at /Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:284:15
+[debug] [AppiumDriver@774a]     at param (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:365:14)
+[debug] [AppiumDriver@774a]     at param (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:376:14)
+[debug] [AppiumDriver@774a]     at Function.process_params (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:421:3)
+[debug] [AppiumDriver@774a]     at next (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:280:10)
+[debug] [AppiumDriver@774a]     at logger (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/morgan/index.js:144:5)
+[debug] [AppiumDriver@774a]     at Layer.handle [as handle_request] (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/layer.js:95:5)
+[debug] [AppiumDriver@774a]     at trim_prefix (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:328:13)
+[debug] [AppiumDriver@774a]     at /Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:286:9
+[debug] [AppiumDriver@774a]     at Function.process_params (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:346:12)
+[HTTP] <-- GET /wd/hub/session/1a99ce25-9c4c-4b90-97c4-7c98fb5179a5/window/rect 404 1 ms - 2368
+[HTTP]
+[HTTP] --> GET /wd/hub/session/1a99ce25-9c4c-4b90-97c4-7c98fb5179a5/window/rect
+[HTTP] {}
+[debug] [AppiumDriver@774a] Encountered internal error running command: NoSuchDriverError: A session is either terminated or not started
+[debug] [AppiumDriver@774a]     at asyncHandler (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/@appium/base-driver/lib/protocol/protocol.js:315:15)
+[debug] [AppiumDriver@774a]     at /Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/@appium/base-driver/lib/protocol/protocol.js:518:15
+[debug] [AppiumDriver@774a]     at Layer.handle [as handle_request] (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/layer.js:95:5)
+[debug] [AppiumDriver@774a]     at next (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/route.js:144:13)
+[debug] [AppiumDriver@774a]     at Route.dispatch (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/route.js:114:3)
+[debug] [AppiumDriver@774a]     at Layer.handle [as handle_request] (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/layer.js:95:5)
+[debug] [AppiumDriver@774a]     at /Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:284:15
+[debug] [AppiumDriver@774a]     at param (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:365:14)
+[debug] [AppiumDriver@774a]     at param (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:376:14)
+[debug] [AppiumDriver@774a]     at Function.process_params (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:421:3)
+[debug] [AppiumDriver@774a]     at next (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:280:10)
+[debug] [AppiumDriver@774a]     at logger (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/morgan/index.js:144:5)
+[debug] [AppiumDriver@774a]     at Layer.handle [as handle_request] (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/layer.js:95:5)
+[debug] [AppiumDriver@774a]     at trim_prefix (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:328:13)
+[debug] [AppiumDriver@774a]     at /Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:286:9
+[debug] [AppiumDriver@774a]     at Function.process_params (/Users/tai2/Code/autify/appium-configureLocalization-issue-sscce/node_modules/express/lib/router/index.js:346:12)
+[HTTP] <-- GET /wd/hub/session/1a99ce25-9c4c-4b90-97c4-7c98fb5179a5/window/rect 404 1 ms - 2368
+[HTTP]
+```
+
+## With a 5 seconds delay before getWindowRect()
 
 ```
 [HTTP] --> POST /wd/hub/session
