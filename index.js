@@ -30,7 +30,7 @@ async function main () {
     }
   })
   
-  await setTimeout(70 * 1000)
+  //await setTimeout(70 * 1000)
 
   const windowSize = await client.getWindowSize()
   console.log(windowSize)
